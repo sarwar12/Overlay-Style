@@ -1,0 +1,104 @@
+h1{
+	color: teal;
+	text-align: center;
+	}
+.container{
+	width: 1170px;
+	margin: 0 auto;
+	}
+.overley_work{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	}
+.image{
+	display: block;
+	width: 200px;
+	height: 200px;
+	}
+.overlay{
+	position: absolute;
+	transition: all .3s ease;
+	opacity: 0;
+	background: skyblue;
+	}
+.overley_work:hover .overlay{
+	opacity: 1;
+	}
+.text{
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	}
+/*Overlay Left*/
+.over_left{
+	height: 100%;
+	width: 0;
+	top: 0;
+	left: 0;
+	background: #00b1ba;
+	}
+/*Overlay Right*/
+.over_right{
+	height: 100%;
+	width: 0;
+	top: 0;
+	right: 0;
+	background: red;
+	}
+.overley_work:hover .over_left,
+.overley_work:hover .over_right{
+	width: 100%;
+	}
+/*Overlay top*/
+.over_top{
+	width: 100%;
+	height: 0;
+	top: 0;
+	left: 0;
+	background: #skyblue;
+}
+/*Overlay Bottom*/
+.over_bottom{
+	width: 100%;
+	height: 0;
+	bottom: 0;
+	right: 0;
+	background: #yellow;
+}
+.overley_work:hover .over_top,
+.overley_work:hover .over_bottom{
+	height: 100%;
+	}
+/*Overlay Cross TopSide */
+.over_cross_top{
+	width: 0;
+	height: 0;
+	top: 0;
+	left: 0;
+	background: #teal;
+}
+/*Overlay_cross_bottom side*/
+.over_cross_bottom{
+	width: 0;
+	height: 0;
+	bottom: 0;
+	right: 0;
+	background: #orange;
+}
+.overley_work:hover .over_cross_top,
+.overley_work:hover .over_cross_bottom{
+	width: 100%;
+	height: 100%;
+}
+/*Overlay Fade Style*/
+.over_fade{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #00b1bab1;
+}
